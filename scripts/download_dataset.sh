@@ -1,4 +1,5 @@
-gdown https://drive.google.com/uc?id=1YKFRsNH6XTfrjA17DXE54nKJtcHjwQAz -O data_tcga.zip && \
-    rm -rf data_tcga && \
-    unzip data_tcga.zip && \
-    rm data_tcga.zip
+gdown https://drive.google.com/uc?id=19LmhPiHjpPWzorUqy_Nhk_tn8eCli8tY -O TCGA-jp2.zip && \
+    rm -rf TCGA-jp2 && \
+    unzip TCGA-jp2.zip && \
+    rm TCGA-jp2.zip
+    
