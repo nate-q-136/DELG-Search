@@ -5,7 +5,14 @@ import os
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-import openslide
+from constants.path_openslide_window import OPENSLIDE_PATH
+import os
+if hasattr(os, 'add_dll_directory'):
+    # Windows
+    with os.add_dll_directory(OPENSLIDE_PATH):
+        import openslide
+else:
+    import openslide
 
 def save_h5_patches_after_remove_artifacts(image_slide_path, coord_path, patch_size, save_patch_dir, threshold_white=0.9):
     """

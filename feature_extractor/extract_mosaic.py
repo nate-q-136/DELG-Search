@@ -2,7 +2,15 @@ import h5py
 import os
 import glob
 import pickle
-import openslide
+# OPENSLIDE_PATH = r'C:\Users\Le Quang Nhat\Downloads\openslide-bin-4.0.0.6-windows-x64\openslide-bin-4.0.0.6-windows-x64\bin'  # Replace with the path where OpenSlide DLLs are extracted
+from constants.path_openslide_window import OPENSLIDE_PATH
+import os
+if hasattr(os, 'add_dll_directory'):
+    # Windows
+    with os.add_dll_directory(OPENSLIDE_PATH):
+        import openslide
+else:
+    import openslide
 import argparse
 import time
 import cv2 as cv

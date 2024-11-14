@@ -73,3 +73,11 @@ Example structure after preprocessing:
     │   ├── patches
     │   └── stitches
 ```
+
+## NOTE: IF USE WINDOW
+- Download this file: https://drive.google.com/file/d/1pgwxTOeduKLWYlkCPcV3CYUrsW2xgZ3i/view?usp=drive_link
+- Then extract at anywhere you want
+- Finally, change the folder directory path in constants/path_openslide_window.py
+```
+    OPENSLIDE_PATH = r'C:\Users\Le Quang Nhat\Downloads\openslide-bin-4.0.0.6-windows-x64\openslide-bin-4.0.0.6-windows-x64\bin'  # Replace 
+```
