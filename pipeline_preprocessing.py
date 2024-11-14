@@ -13,7 +13,7 @@ def pipeline(source_dir, save_dir, patch_size=256, step_size=256, seg=True, patc
         os.makedirs(save_preprocessing_dir, exist_ok=True)
         processing_patches(disease_dir, save_preprocessing_dir, patch_size=patch_size, step_size=step_size, seg=seg, patch=patch, stitch=stitch, save_mask=save_mask)
         extract_mosaic(disease_dir, save_preprocessing_dir+"/patches", save_preprocessing_dir)
-        arfifacts_removal(folder_slides_path=disease_dir, folder_mosaic_patches_path=save_preprocessing_dir+"/patches", patch_size=patch_size, folder_save_clean_patch_dir=save_preprocessing_dir+"/clean_patches")
+        arfifacts_removal(folder_slides_path=disease_dir, folder_mosaic_patches_path=save_preprocessing_dir+"/feature_mosaic_patches", patch_size=patch_size, folder_save_clean_patch_dir=save_preprocessing_dir+"/clean_patches")
 
 def main():
     parser = argparse.ArgumentParser()
