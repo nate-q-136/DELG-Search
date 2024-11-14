@@ -1,4 +1,4 @@
-OPENSLIDE_PATH = r'C:\Users\Le Quang Nhat\Downloads\openslide-bin-4.0.0.6-windows-x64\openslide-bin-4.0.0.6-windows-x64\bin'  # Replace with the path where OpenSlide DLLs are extracted
+from constants.path_openslide_window import OPENSLIDE_PATH
 import os
 if hasattr(os, 'add_dll_directory'):
     # Windows
