@@ -346,5 +346,5 @@ def processing_patches(
         filter_params=filter_params,
         vis_params=vis_params,
         patch_params=patch_params,
-        auto_skip=False
+        auto_skip=True
     )
