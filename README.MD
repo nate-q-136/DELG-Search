@@ -35,10 +35,24 @@ To set up this project, follow these steps:
     scripts/download_dataset.sh
     ```
 
-## Preprocessing-data
+## Preprocessing-data all stages
     ```bash
     python3 pipeline_preprocessing.py --source_dir TCGA-jp2  --save_dir RESULT_PATCHES_DIRECTORY
     ```
+
+## Preprocessing-data stage patches
+    ```bash
+    python3 pipeline_preprocessing.py --source_dir TCGA-jp2  --save_dir RESULT_PATCHES_DIRECTORY --upload_drive --stage "patches"
+    ```
+## Preprocessing-data stage mosaic
+    ```bash
+    python3 pipeline_preprocessing.py --source_dir TCGA-jp2  --save_dir RESULT_PATCHES_DIRECTORY --upload_drive --stage "mosaic"
+    ```
+## Preprocessing-data stage clean
+    ```bash
+    python3 pipeline_preprocessing.py --source_dir TCGA-jp2  --save_dir RESULT_PATCHES_DIRECTORY --upload_drive --stage "clean"
+    ```
+
 
 ## Dataset Structure
 
