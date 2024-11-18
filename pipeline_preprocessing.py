@@ -79,7 +79,7 @@ def pipeline(
         print(f"Folder zipped as {zip_filename}")
 
         # Upload the zip file to Google Drive
-        upload_to_drive(zip_path)
+        upload_to_drive(zip_path, folder_id="1qJuckL9fUPFf51iHVPsht5A6T4Yq3KLI")
 
 
 def main():
