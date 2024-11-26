@@ -1,5 +1,4 @@
 from .image_datasets import (
-    ImageFolderCustom,
     ImageFolderCustomV2,
     display_type_tcga_images,
     find_classes,
